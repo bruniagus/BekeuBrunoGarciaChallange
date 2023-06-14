@@ -1,0 +1,6 @@
+FROM composer:latest
+
+WORKDIR /my-project
+
+CMD composer install --ignore-platform-reqs
+CMD docker-compose up
